@@ -1,0 +1,95 @@
+@use '../../../styles/global.scss' as *;
+
+.Production {
+	padding: 80px 0;
+	color: $gray;
+	background-color: $light-white;
+	.list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px;
+	}
+
+	.item {
+		&:first-child .itemImg {
+			border-radius: 20px;
+		}
+	}
+
+	.itemLast {
+		& .itemImg {
+			border: 1px solid $gray;
+			border-radius: 50px;
+			padding: 15px;
+			gap: 25px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			& .itemText {
+				font-family: $manrope;
+				font-weight: 600;
+				font-size: 24px;
+				text-transform: uppercase;
+				text-align: center;
+				color: $gray;
+				max-width: 190px;
+				margin: 0 auto;
+			}
+
+			& .iconWrapper {
+				border-radius: 20px;
+				padding: 2px 10px;
+				width: 44px;
+				height: 28px;
+				background-color: $orange;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+
+	.title {
+		color: $gray;
+	}
+
+	.subtitle {
+		color: $gray;
+		font-family: $benzin;
+		font-weight: 400;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+		color: $gray;
+		margin-bottom: 80px;
+	}
+
+	.itemImg {
+		width: 375px;
+		height: 465px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	.itemTitle {
+		font-family: $manrope;
+		font-weight: 400;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: $gray;
+		margin: 20px 0 5px;
+	}
+
+	.itemText {
+		font-family: $manrope;
+		font-weight: 400;
+		font-size: 18px;
+		color: rgba($gray, 0.4);
+	}
+}
