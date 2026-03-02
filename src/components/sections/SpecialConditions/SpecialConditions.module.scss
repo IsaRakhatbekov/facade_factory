@@ -1,0 +1,83 @@
+@use '../../../styles/global.scss' as *;
+
+.SpecialConditions {
+	padding: 80px 0;
+
+	.subtitle {
+		margin-bottom: 80px;
+	}
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 80px;
+		flex-wrap: wrap; // добавляем перенос при необходимости
+	}
+
+	.imgWrapper {
+		flex: 1 1 300px; // базовый размер, но не больше 565px
+		max-width: 565px;
+		border-radius: 20px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: auto; // сохраняем пропорции
+			object-fit: cover;
+		}
+	}
+
+	.content {
+		flex: 1 1 400px; // контент тоже может сжиматься и растягиваться
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 50px;
+	}
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		&:nth-child(1) {
+			.itemTitle {
+				color: $orange;
+			}
+		}
+	}
+
+	.circle {
+		width: 8px;
+		height: 8px;
+		background-color: $orange;
+		border-radius: 100%;
+	}
+
+	.itemTitle {
+		font-family: $manrope;
+		font-weight: 400;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: $white;
+	}
+
+	.itemText {
+		font-family: $manrope;
+		font-weight: 400;
+		font-size: 18px;
+		color: $white;
+	}
+
+	// Адаптив под мобильные
+	@media (max-width: 768px) {
+		.content {
+			grid-template-columns: 1fr; // одна колонка
+			gap: 30px;
+		}
+
+		.wrapper {
+			gap: 40px;
+		}
+	}
+}
