@@ -1,0 +1,45 @@
+@use '../../../styles/global.scss' as *;
+.WhyWe {
+	padding: 80px 0;
+	border-radius: 100px 100px 0 0;
+	color: $gray;
+	background-color: $white;
+
+	.title {
+		color: $gray;
+		margin-bottom: 80px;
+	}
+
+	.top {
+		padding: 60px;
+		border-radius: 50px;
+		border: 1px solid $gray;
+		.list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 40px;
+		}
+
+		.item {
+			width: 100%;
+			max-width: 338px;
+		}
+
+		.circle {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background-color: $orange;
+			border-radius: 100%;
+			margin-bottom: 15px;
+		}
+
+		.text {
+			font-family: $manrope;
+			font-weight: 400;
+			font-size: 18px;
+			text-transform: uppercase;
+			color: $gray;
+		}
+	}
+}
