@@ -1,0 +1,26 @@
+// Font variables (defined in layout.tsx via Next.js fonts)
+$manrope: var(--font-manrope);
+$benzin: var(--font-benzin);
+
+// Color variables
+$white: #fff;
+$gray: #1f1f1f;
+$orange: #ff9934;
+
+body {
+	color: $white;
+	background: $gray;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1245px;
+}
+
+.def-title {
+	font-family: $benzin;
+	font-weight: 400;
+	font-size: 48px;
+	letter-spacing: 0.01em;
+	color: $white;
+}
