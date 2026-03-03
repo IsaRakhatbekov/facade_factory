@@ -4,6 +4,7 @@ import Hero from '../components/sections/Hero/Hero'
 import OurClients from '../components/sections/OurClients/OurClients'
 import Production from '../components/sections/Production/Production'
 import ReadyProjects from '../components/sections/ReadyProjects/ReadyProjects'
+import SpecialConditions from '../components/sections/SpecialConditions/SpecialConditions'
 import WorkProcess from '../components/sections/WorkProcess /WorkProcess'
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
 				<WorkProcess />
 				{/* <WhyWe /> */}
 				<ReadyProjects />
-				{/* <SpecialConditions /> */}
+				<SpecialConditions />
 				{/* <Form /> */}
 			</main>
 			{/* <Footer /> */}

@@ -5,13 +5,18 @@ const SpecialConditions = () => {
 	return (
 		<section className={styles.SpecialConditions}>
 			<div className={`${styles.container} container`}>
-				<h2 className={`${styles.title} def-title`}>
-					Специальные условия для дизайнеров и партнёров
-				</h2>
-				<h3 className={styles.subtitle}>
-					Мы открыты к долгосрочному сотрудничеству с мебельными производствами
-					и дизайн-бюро.
-				</h3>
+				<div className={styles.titleWrapper}>
+					<div className={styles.titleLine}></div>
+					<div className={styles.titleInner}>
+						<h2 className={`${styles.title} def-title`}>
+							Специальные условия для дизайнеров и партнёров
+						</h2>
+						<h3 className={styles.subtitle}>
+							Мы открыты к долгосрочному сотрудничеству с мебельными
+							производствами и дизайн-бюро.
+						</h3>
+					</div>
+				</div>
 
 				<div className={styles.wrapper}>
 					<div className={styles.imgWrapper}>
