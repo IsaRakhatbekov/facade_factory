@@ -4,6 +4,23 @@ import { Manrope } from 'next/font/google'
 import '../styles/global.scss'
 import '../styles/reset.scss'
 
+export const metadata = {
+	title: 'Фабрика фасадов — Фасады для мебели на ЧПУ',
+	description:
+		'Производство мебельных фасадов на ЧПУ с профессиональной покраской. Фасады кухонь, шкафов и другой мебели. Точно, красиво, в срок.',
+	keywords: ['фасады для мебели', 'мебельные фасады', 'фасады на заказ', 'производство фасадов', 'фасады на ЧПУ'],
+	openGraph: {
+		title: 'Фабрика фасадов — Фасады для мебели на ЧПУ',
+		description:
+			'Производство мебельных фасадов на ЧПУ с профессиональной покраской. Фасады кухонь, шкафов и другой мебели.',
+		locale: 'ru_RU',
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
+}
+
 const manrope = Manrope({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700'],
