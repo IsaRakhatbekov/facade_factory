@@ -1,4 +1,5 @@
 import Header from '../components/Header/Header'
+import AboutUs from '../components/sections/AboutUs/AboutUs'
 import Hero from '../components/sections/Hero/Hero'
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
 			<Header />
 			<main>
 				<Hero />
-				{/* <AboutUs /> */}
+				<AboutUs />
 				{/* <OurClients /> */}
 				{/* <Production /> */}
 				{/* <WorkProcess /> */}

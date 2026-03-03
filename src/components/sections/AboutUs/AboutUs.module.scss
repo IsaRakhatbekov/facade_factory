@@ -27,6 +27,14 @@
 		max-width: 211px;
 	}
 
+	.iconWrapper {
+		display: flex;
+		align-content: inherit;
+		justify-content: center;
+		width: 35px;
+		height: 35px;
+	}
+
 	.text {
 		font-family: $manrope;
 		text-transform: uppercase;
@@ -36,6 +44,63 @@
 
 		& span {
 			color: rgba(255, 255, 255, 0.3);
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.AboutUs {
+		padding: 40px 0;
+		.list {
+			gap: 10px;
+		}
+
+		.text {
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.AboutUs {
+		.list {
+			gap: 40px;
+			flex-wrap: wrap;
+		}
+
+		.item {
+			gap: 10px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.AboutUs {
+		.wrapper {
+			padding: 20px;
+		}
+		.list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.AboutUs {
+		.title {
+			display: none;
+		}
+		.list {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.item {
+			width: 100%;
+			max-width: 100%;
+			flex-direction: row;
+			gap: 25px;
 		}
 	}
 }

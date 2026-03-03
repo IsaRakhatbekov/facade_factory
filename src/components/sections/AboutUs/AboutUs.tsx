@@ -57,7 +57,7 @@ const AboutUs = () => {
 								</svg>
 							</div>
 							<p className={styles.text}>
-								Покраска по RAL / NCS <span>виды палитры</span>
+								Покраска по RAL / NCS <br /> <span>виды палитры</span>
 							</p>
 						</li>
 						<li className={styles.item}>
