@@ -1,5 +1,6 @@
 import Header from '../components/Header/Header'
 import AboutUs from '../components/sections/AboutUs/AboutUs'
+import Form from '../components/sections/Form/Form'
 import Hero from '../components/sections/Hero/Hero'
 import OurClients from '../components/sections/OurClients/OurClients'
 import Production from '../components/sections/Production/Production'
@@ -20,7 +21,7 @@ export default function Home() {
 				{/* <WhyWe /> */}
 				<ReadyProjects />
 				<SpecialConditions />
-				{/* <Form /> */}
+				<Form />
 			</main>
 			{/* <Footer /> */}
 		</div>

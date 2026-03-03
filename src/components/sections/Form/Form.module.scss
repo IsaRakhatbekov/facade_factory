@@ -109,3 +109,26 @@
 		color: $gray;
 	}
 }
+
+@media (max-width: 500px) {
+	.Form {
+		.form {
+			padding: 15px;
+		}
+
+		.roleTitle {
+			text-align: center;
+		}
+
+		.roleInner {
+			gap: 10px;
+			background: none;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.roleBtn {
+			background: rgba(255, 255, 255, 0.2);
+		}
+	}
+}
