@@ -8,7 +8,7 @@
 		padding: 12px;
 		border-radius: 30px;
 		background: rgba(255, 255, 255, 0.1);
-		margin-bottom: 10px;
+		margin: 0 0 10px 0;
 		font-family: $manrope;
 		font-weight: 400;
 		font-size: 16px;
@@ -16,6 +16,33 @@
 		text-align: center;
 		color: $white;
 	}
+
+	.titleWrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.titleInner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	.titleLine {
+		flex-shrink: 1;
+		display: inline-block;
+		width: 100%;
+		max-width: 100%;
+		height: 10px;
+		border-radius: 30px;
+		background: rgba(255, 255, 255, 0.6);
+	}
+
+	.title {
+		flex-shrink: 0;
+	}
+
 	.subtitle {
 		margin-bottom: 80px;
 		font-family: $benzin;
@@ -29,6 +56,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		text-align: left;
 	}
 
 	.item {
@@ -51,6 +79,7 @@
 		line-height: 156%;
 		letter-spacing: -0.03em;
 		color: rgba($white, 0.8);
+		flex-shrink: 0;
 	}
 
 	.stepContent {
@@ -94,6 +123,7 @@
 		line-height: 156%;
 		letter-spacing: -0.03em;
 		color: $orange;
+		flex-shrink: 0;
 	}
 
 	.btn {
@@ -106,5 +136,61 @@
 		font-size: 18px;
 		color: $gray;
 		background-color: $orange;
+	}
+}
+
+@media (max-width: 991px) {
+	.WorkProcess {
+		.subtitle {
+			font-size: 20px;
+		}
+
+		.inner {
+			gap: 30px;
+		}
+
+		.stepTitle {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.WorkProcess {
+		text-align: center;
+
+		.step,
+		.stepTime {
+			font-size: 18px;
+		}
+
+		.titleLine {
+			display: none;
+		}
+
+		.titleInner {
+			justify-content: center;
+		}
+
+		.title {
+			margin-bottom: 10px;
+		}
+
+		.subtitle {
+			text-align: center;
+			margin: 0 0 40px 0;
+		}
+
+		.stepTitle {
+			font-size: 16px;
+		}
+
+		.text {
+			font-size: 16px;
+		}
+
+		.btn {
+			margin: 40px auto 0;
+		}
 	}
 }

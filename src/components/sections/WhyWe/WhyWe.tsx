@@ -6,9 +6,13 @@ const WhyWe = () => {
 		<section className={styles.WhyWe}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.top}>
-					<h2 className={`${styles.title} def-title`}>
-						Почему выбирают именно нас
-					</h2>
+					<div className={styles.titleWrapper}>
+						<h2 className={`${styles.title} def-title`}>
+							Почему выбирают именно нас
+						</h2>
+						<div className={styles.titleLine}></div>
+					</div>
+
 					<ul className={styles.list}>
 						<li className={styles.item}>
 							<span className={styles.circle}></span>
@@ -36,8 +40,13 @@ const WhyWe = () => {
 								Мы говорим на одном языке с мебельщиками и дизайнерами
 							</p>
 						</li>
-						<li className={styles.item}>
-							<Image src={whyWe1} alt='whyWe1' />
+						<li className={`${styles.item} ${styles.itemImg}`}>
+							<Image
+								src={whyWe1}
+								alt='whyWe1'
+								fill
+								style={{ objectFit: 'contain' }}
+							/>
 						</li>
 					</ul>
 				</div>

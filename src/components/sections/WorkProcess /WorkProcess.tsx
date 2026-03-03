@@ -5,10 +5,15 @@ const WorkProcess = () => {
 		<section className={styles.WorkProcess}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.upTitle}>просто и прозрачно</div>
-				<h2 className={`${styles.title} def-title`}>Как мы работаем</h2>
-				<h3 className={styles.subtitle}>
-					Поняткий процесс — предсказуемый результат
-				</h3>
+				<div className={styles.titleWrapper}>
+					<div className={styles.titleInner}>
+						<h2 className={`${styles.title} def-title`}>Как мы работаем</h2>
+						<div className={styles.titleLine}></div>
+					</div>
+					<h3 className={styles.subtitle}>
+						Поняткий процесс — предсказуемый результат
+					</h3>
+				</div>
 
 				<ul className={styles.list}>
 					<li className={styles.item}>
