@@ -11,8 +11,15 @@ const Production = () => {
 	return (
 		<section className={styles.Production}>
 			<div className={`${styles.container} container`}>
-				<h2 className={`${styles.title} def-title`}>Что мы производим</h2>
-				<h3 className={styles.subtitle}>Изготавливаем фасады под ваш проект</h3>
+				<div className={styles.titleWrapper}>
+					<div className={styles.titleInner}>
+						<div className={styles.titleLine}></div>
+						<h2 className={`${styles.title} def-title`}>Что мы производим</h2>
+					</div>
+					<h3 className={styles.subtitle}>
+						Изготавливаем фасады под ваш проект
+					</h3>
+				</div>
 				<ul className={styles.list}>
 					<li className={styles.item}>
 						<div className={styles.itemImg}>
