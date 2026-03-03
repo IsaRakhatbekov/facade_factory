@@ -1,3 +1,4 @@
+import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import AboutUs from '../components/sections/AboutUs/AboutUs'
 import Form from '../components/sections/Form/Form'
@@ -24,6 +25,7 @@ export default function Home() {
 				<SpecialConditions />
 				<Form />
 			</main>
+			<Footer />
 		</div>
 	)
 }
