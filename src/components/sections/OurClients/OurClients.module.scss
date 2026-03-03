@@ -2,28 +2,44 @@
 
 .OurClients {
 	padding: 80px 0;
-	.titleWrapper {
+
+	.titleInner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 40px;
+		gap: 20px;
+	}
+
+	.titleWrapper {
+		display: flex;
+		flex-direction: column;
 		margin-bottom: 80px;
 	}
 
-	.title {
-		width: 454px;
+	.titleInner {
+		margin-bottom: 10px;
 	}
 
-	.titleInner {
+	.title {
+		flex-shrink: 0;
+	}
+
+	.titleLine {
+		flex-shrink: 1;
+		display: inline-block;
+		width: 100%;
+		max-width: 100%;
 		height: 10px;
 		border-radius: 30px;
 		background: rgba(255, 255, 255, 0.6);
 	}
 
 	.subtitle {
+		align-self: flex-end;
+
 		font-family: $benzin;
 		font-weight: 400;
-		font-size: 24px;
+		font-size: clamp(16px, 2vw, 24px);
 		letter-spacing: 0.02em;
 		text-align: right;
 		color: rgba(255, 255, 255, 0.7);
@@ -63,6 +79,7 @@
 		font-size: 24px;
 		text-transform: uppercase;
 		text-align: center;
+		padding: 10px;
 	}
 
 	.cardTitle {
@@ -91,5 +108,70 @@
 		font-weight: 400;
 		font-size: 18px;
 		color: $white;
+	}
+}
+
+@media (max-width: 991px) {
+	.OurClients {
+		.list {
+			gap: 20px;
+		}
+		.cardTitle {
+			font-size: 20px;
+		}
+
+		.text {
+			font-size: 16px;
+		}
+
+		.itemBtnLink {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.OurClients {
+		padding: 40px 0;
+		.list {
+			gap: 40px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.item {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.itemBtnLink {
+			padding: 20px 80px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.OurClients {
+		.titleWrapper {
+			margin-bottom: 40px;
+		}
+		.titleLine {
+			display: none;
+		}
+
+		.subtitle {
+			text-align: left;
+		}
+
+		.list {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.itemBtnLink {
+			padding: 10px 10px;
+			font-weight: 500;
+			font-size: 18px;
+			border-radius: 30px;
+			max-width: 200px;
+		}
 	}
 }

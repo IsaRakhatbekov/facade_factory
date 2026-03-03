@@ -5,13 +5,13 @@ const OurClients = () => {
 		<section className={styles.OurClients}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.titleWrapper}>
-					<h2 className={`${styles.title} def-title`}>Наши клиенты</h2>
 					<div className={styles.titleInner}>
+						<h2 className={`${styles.title} def-title`}>Наши клиенты</h2>
 						<div className={styles.titleLine}></div>
-						<h3 className={styles.subtitle}>
-							Мы работаем для тех, кому важен результат
-						</h3>
 					</div>
+					<p className={styles.subtitle}>
+						Мы работаем для тех, кому важен результат
+					</p>
 				</div>
 				<ul className={styles.list}>
 					<li className={styles.item}>
