@@ -1,3 +1,4 @@
+// import Footer from '../components/Footer/Footer'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import AboutUs from '../components/sections/AboutUs/AboutUs'
@@ -7,6 +8,7 @@ import OurClients from '../components/sections/OurClients/OurClients'
 import Production from '../components/sections/Production/Production'
 import ReadyProjects from '../components/sections/ReadyProjects/ReadyProjects'
 import SpecialConditions from '../components/sections/SpecialConditions/SpecialConditions'
+import WhyWe from '../components/sections/WhyWe/WhyWe'
 import WorkProcess from '../components/sections/WorkProcess/WorkProcess'
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
 				<OurClients />
 				<Production />
 				<WorkProcess />
-				{/* <WhyWe /> */}
+				<WhyWe />
 				<ReadyProjects />
 				<SpecialConditions />
 				<Form />

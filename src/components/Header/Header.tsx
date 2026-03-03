@@ -10,7 +10,7 @@ const SECTION_IDS = {
 	clients: 'clients',
 	production: 'production',
 	workProcess: 'work-process',
-	advantages: 'about',
+	advantages: 'whywe',
 	portfolio: 'portfolio',
 	partners: 'partners',
 	form: 'form',

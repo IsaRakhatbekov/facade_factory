@@ -1,9 +1,9 @@
-import whyWe1 from '@/public/images/whyWe1.png'
+import whyWe1 from '@/public/images/whyWe1.webp'
 import Image from 'next/image'
 import styles from './WhyWe.module.scss'
 const WhyWe = () => {
 	return (
-		<section className={styles.WhyWe}>
+		<section id='whywe' className={styles.WhyWe}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.top}>
 					<div className={styles.titleWrapper}>
@@ -41,12 +41,7 @@ const WhyWe = () => {
 							</p>
 						</li>
 						<li className={`${styles.item} ${styles.itemImg}`}>
-							<Image
-								src={whyWe1}
-								alt='whyWe1'
-								fill
-								style={{ objectFit: 'contain' }}
-							/>
+							<Image src={whyWe1} alt='whyWe1' />
 						</li>
 					</ul>
 				</div>

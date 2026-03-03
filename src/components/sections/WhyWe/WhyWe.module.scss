@@ -92,3 +92,60 @@
 		}
 	}
 }
+
+@media (max-width: 991px) {
+	.WhyWe {
+		border-radius: 20px 20px 0 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.WhyWe {
+		.top {
+			padding: 40px 20px;
+		}
+
+		.titleWrapper {
+			margin-bottom: 60px;
+		}
+
+		.titleLine {
+			display: none;
+		}
+
+		.title {
+			flex-shrink: 1;
+		}
+
+		.list {
+			gap: 20px;
+		}
+
+		.text {
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.WhyWe {
+		.top {
+			border-radius: 16px;
+		}
+		.list {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.item {
+			max-width: 100%;
+		}
+
+		.itemImg {
+			display: none;
+		}
+
+		.titleWrapper {
+			margin-bottom: 20px;
+		}
+	}
+}

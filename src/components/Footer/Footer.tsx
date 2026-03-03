@@ -35,7 +35,7 @@ const Footer = () => {
 							</a>
 						</li>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a className={styles.link} href='#whywe'>
 								Преимущества
 							</a>
 						</li>
