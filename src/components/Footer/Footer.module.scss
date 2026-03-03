@@ -88,6 +88,22 @@
 				font-size: 16px;
 				color: $white;
 			}
+
+			.addressDesktop {
+				display: inline;
+
+				@media (max-width: 990px) {
+					display: none;
+				}
+			}
+
+			.addressMobile {
+				display: none;
+
+				@media (max-width: 990px) {
+					display: inline;
+				}
+			}
 		}
 	}
 
@@ -97,5 +113,59 @@
 		font-weight: 400;
 		font-size: 14px;
 		color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+@media (max-width: 1200px) {
+	.Footer {
+		.top {
+			.logoWrapper {
+				align-items: baseline;
+				flex-direction: column;
+			}
+
+			.list {
+				gap: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.Footer {
+		.top {
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+
+			.logoWrapper {
+				align-items: center;
+				gap: 5px;
+			}
+
+			.list {
+				gap: 30px;
+				justify-content: center;
+				flex-wrap: wrap;
+				width: 100%;
+				max-width: 660px;
+				margin: 0 auto;
+			}
+
+			.link {
+				font-size: 18px;
+			}
+		}
+		.middle {
+			gap: 30px;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
+		}
+
+		.copyright {
+			margin: 0 auto;
+			text-align: center;
+		}
 	}
 }

@@ -1,4 +1,4 @@
-import logo from '@/public/images/logo.png'
+import logo from '@/public/images/logo.svg'
 import Image from 'next/image'
 import styles from './Footer.module.scss'
 
@@ -87,7 +87,16 @@ const Footer = () => {
 					</div>
 					<div className={styles.addressWrapper}>
 						<a href='tel:996557000755'>Телефон: 996 557 000 755</a>
-						<a href=''>Адрес: Город Бишкек, Улица Интергельпо, 4</a>
+						<a href=''>
+							<span className={styles.addressDesktop}>
+								Адрес: Город Бишкек, Улица Интергельпо, 4
+							</span>
+							<span className={styles.addressMobile}>
+								Адрес: Город Бишкек, Улица Абдумомунова, 2 этаж, 5 кабинет
+								<br />
+								Первомайский район, Бишкек, 720001
+							</span>
+						</a>
 					</div>
 				</div>
 				<p className={styles.copyright}>Политика конфиденциальности</p>
