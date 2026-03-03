@@ -3,19 +3,25 @@ const Hero = () => {
 	return (
 		<section className={styles.Hero}>
 			<div className={`${styles.container} container`}>
-				<h1 className={styles.title}>
-					Фасады <br /> для мебели
-				</h1>
-				<h2 className={styles.subtitle}>
-					<span>Точно</span> <span>Красиво</span> <span>В срок</span>
-				</h2>
-				<div className={styles.btnWrapper}>
-					<button className={`${styles.btn} ${styles.btnPrimary}`}>
-						Рассчитать стоимость
-					</button>
-					<button className={`${styles.btn} ${styles.btnTransparent}`}>
-						Получить консультацию
-					</button>
+				<div className={styles.heroContent}>
+					<h1 className={styles.title}>
+						<div className={styles.titleInner}>
+							<span className={styles.titleFirst}>Фасады</span>
+							<span className={styles.titleLine}></span>
+						</div>
+						<span className={styles.titleSecond}> для мебели</span>
+					</h1>
+					<h2 className={styles.subtitle}>
+						<span>Точно</span> <span>Красиво</span> <span>В срок</span>
+					</h2>
+					<div className={styles.btnWrapper}>
+						<button className={`${styles.btn} ${styles.btnPrimary}`}>
+							Рассчитать стоимость
+						</button>
+						<button className={`${styles.btn} ${styles.btnTransparent}`}>
+							Получить консультацию
+						</button>
+					</div>
 				</div>
 				<ul className={styles.list}>
 					<li className={styles.item}>
