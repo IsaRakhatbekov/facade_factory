@@ -2,7 +2,7 @@ import styles from './Form.module.scss'
 
 const Form = () => {
 	return (
-		<section className={styles.Form}>
+		<section id="form" className={styles.Form}>
 			<div className={`${styles.container} container`}>
 				<h2 className={`${styles.title} def-title`}>Рассчитаем ваш заказ</h2>
 				<p className={styles.text}>

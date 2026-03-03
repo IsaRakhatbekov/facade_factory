@@ -5,8 +5,47 @@ import styles from './Header.module.scss'
 import logo from '@/public/images/logo.svg'
 import { useEffect, useState } from 'react'
 
+const SECTION_IDS = {
+	about: 'about',
+	clients: 'clients',
+	production: 'production',
+	workProcess: 'work-process',
+	advantages: 'about',
+	portfolio: 'portfolio',
+	partners: 'partners',
+	form: 'form',
+} as const
+
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false)
+	const [isScrolled, setIsScrolled] = useState(false)
+
+	const scrollToSection = (sectionId: string) => {
+		const el = document.getElementById(sectionId)
+		if (el) {
+			el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+		}
+	}
+
+	const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+		e.preventDefault()
+		scrollToSection(sectionId)
+		closeMenu()
+	}
+
+	const handleCalcClick = () => {
+		scrollToSection(SECTION_IDS.form)
+		closeMenu()
+	}
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY >= 1)
+		}
+		handleScroll()
+		window.addEventListener('scroll', handleScroll)
+		return () => window.removeEventListener('scroll', handleScroll)
+	}, [])
 
 	useEffect(() => {
 		if (isOpen) {
@@ -37,7 +76,9 @@ const Header = () => {
 	}
 
 	return (
-		<header className={styles.header}>
+		<header
+			className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}
+		>
 			<div className={`${styles.container} container`}>
 				<nav className={styles.nav}>
 					<div className={styles.logoWrapper}>
@@ -45,42 +86,72 @@ const Header = () => {
 					</div>
 					<ul className={styles.list}>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a
+								className={styles.link}
+								href={`#${SECTION_IDS.about}`}
+								onClick={(e) => handleNavClick(e, SECTION_IDS.about)}
+							>
 								О нас
 							</a>
 						</li>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a
+								className={styles.link}
+								href={`#${SECTION_IDS.clients}`}
+								onClick={(e) => handleNavClick(e, SECTION_IDS.clients)}
+							>
 								Наши клиенты
 							</a>
 						</li>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a
+								className={styles.link}
+								href={`#${SECTION_IDS.production}`}
+								onClick={(e) => handleNavClick(e, SECTION_IDS.production)}
+							>
 								Что производим
 							</a>
 						</li>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a
+								className={styles.link}
+								href={`#${SECTION_IDS.workProcess}`}
+								onClick={(e) => handleNavClick(e, SECTION_IDS.workProcess)}
+							>
 								Как работаем
 							</a>
 						</li>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a
+								className={styles.link}
+								href={`#${SECTION_IDS.advantages}`}
+								onClick={(e) => handleNavClick(e, SECTION_IDS.advantages)}
+							>
 								Преимущества
 							</a>
 						</li>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a
+								className={styles.link}
+								href={`#${SECTION_IDS.portfolio}`}
+								onClick={(e) => handleNavClick(e, SECTION_IDS.portfolio)}
+							>
 								Портфолио
 							</a>
 						</li>
 						<li className={styles.item}>
-							<a className={styles.link} href='#'>
+							<a
+								className={styles.link}
+								href={`#${SECTION_IDS.partners}`}
+								onClick={(e) => handleNavClick(e, SECTION_IDS.partners)}
+							>
 								Партнёрам
 							</a>
 						</li>
 					</ul>
-					<button className={styles.btn}>Рассчитать стоимость</button>
+					<button className={styles.btn} onClick={handleCalcClick}>
+						Рассчитать стоимость
+					</button>
 					<button className={styles.burger} onClick={handleOpen}>
 						<span
 							className={`${styles.burgerLine} ${isOpen ? styles.open : ''}`}
@@ -89,44 +160,72 @@ const Header = () => {
 					<div className={`${styles.burgerMenu} ${isOpen ? styles.open : ''}`}>
 						<ul className={styles.burgerList}>
 							<li className={styles.item}>
-								<a className={styles.link} href='#' onClick={closeMenu}>
+								<a
+									className={styles.link}
+									href={`#${SECTION_IDS.about}`}
+									onClick={(e) => handleNavClick(e, SECTION_IDS.about)}
+								>
 									О нас
 								</a>
 							</li>
 							<li className={styles.item}>
-								<a className={styles.link} href='#' onClick={closeMenu}>
+								<a
+									className={styles.link}
+									href={`#${SECTION_IDS.clients}`}
+									onClick={(e) => handleNavClick(e, SECTION_IDS.clients)}
+								>
 									Наши клиенты
 								</a>
 							</li>
 							<li className={styles.item}>
-								<a className={styles.link} href='#' onClick={closeMenu}>
+								<a
+									className={styles.link}
+									href={`#${SECTION_IDS.production}`}
+									onClick={(e) => handleNavClick(e, SECTION_IDS.production)}
+								>
 									Что производим
 								</a>
 							</li>
 							<li className={styles.item}>
-								<a className={styles.link} href='#' onClick={closeMenu}>
+								<a
+									className={styles.link}
+									href={`#${SECTION_IDS.workProcess}`}
+									onClick={(e) => handleNavClick(e, SECTION_IDS.workProcess)}
+								>
 									Как работаем
 								</a>
 							</li>
 							<li className={styles.item}>
-								<a className={styles.link} href='#' onClick={closeMenu}>
+								<a
+									className={styles.link}
+									href={`#${SECTION_IDS.advantages}`}
+									onClick={(e) => handleNavClick(e, SECTION_IDS.advantages)}
+								>
 									Преимущества
 								</a>
 							</li>
 							<li className={styles.item}>
-								<a className={styles.link} href='#' onClick={closeMenu}>
+								<a
+									className={styles.link}
+									href={`#${SECTION_IDS.portfolio}`}
+									onClick={(e) => handleNavClick(e, SECTION_IDS.portfolio)}
+								>
 									Портфолио
 								</a>
 							</li>
 							<li className={styles.item}>
-								<a className={styles.link} href='#' onClick={closeMenu}>
+								<a
+									className={styles.link}
+									href={`#${SECTION_IDS.partners}`}
+									onClick={(e) => handleNavClick(e, SECTION_IDS.partners)}
+								>
 									Партнёрам
 								</a>
 							</li>
 							<li className={styles.burgerBtnsWrapper}>
 								<button
 									className={`${styles.burgerBtn} ${styles.burgerBtnPrimary}`}
-									onClick={closeMenu}
+									onClick={handleCalcClick}
 								>
 									Рассчитать стоимость
 								</button>

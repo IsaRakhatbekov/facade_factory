@@ -2,7 +2,7 @@ import styles from './OurClients.module.scss'
 
 const OurClients = () => {
 	return (
-		<section className={styles.OurClients}>
+		<section id="clients" className={styles.OurClients}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.titleWrapper}>
 					<div className={styles.titleInner}>

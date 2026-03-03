@@ -36,3 +36,8 @@ textarea {
 	padding: 0;
 	margin: 0;
 }
+
+/* Отступ при скролле к секциям — фиксированный хедер (~90px) */
+[id] {
+	scroll-margin-top: 90px;
+}

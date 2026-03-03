@@ -2,7 +2,7 @@ import styles from './ReadyProjects.module.scss'
 
 const ReadyProjects = () => {
 	return (
-		<section className={styles.ReadyProjects}>
+		<section id="portfolio" className={styles.ReadyProjects}>
 			<div className={`${styles.container} container`}>
 				<h2 className={`${styles.title} def-title`}>
 					Наши фасады в готовых проектах

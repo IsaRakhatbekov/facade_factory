@@ -2,7 +2,7 @@ import styles from './WorkProcess.module.scss'
 
 const WorkProcess = () => {
 	return (
-		<section className={styles.WorkProcess}>
+		<section id="work-process" className={styles.WorkProcess}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.upTitle}>просто и прозрачно</div>
 				<div className={styles.titleWrapper}>

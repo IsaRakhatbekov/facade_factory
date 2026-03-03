@@ -1,9 +1,9 @@
-import specialConditionsImg from '@/public/images/specialConditionsImg.png'
+import specialConditionsImg from '@/public/images/specialConditionsImg.webp'
 import Image from 'next/image'
 import styles from './SpecialConditions.module.scss'
 const SpecialConditions = () => {
 	return (
-		<section className={styles.SpecialConditions}>
+		<section id="partners" className={styles.SpecialConditions}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.titleWrapper}>
 					<div className={styles.titleLine}></div>

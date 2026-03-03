@@ -1,15 +1,15 @@
-import production1 from '@/public/images/production1.png'
-import production2 from '@/public/images/production2.png'
-import production3 from '@/public/images/production3.png'
-import production4 from '@/public/images/production4.png'
-import production5 from '@/public/images/production5.png'
+import production1 from '@/public/images/production1.webp'
+import production2 from '@/public/images/production2.webp'
+import production3 from '@/public/images/production3.webp'
+import production4 from '@/public/images/production4.webp'
+import production5 from '@/public/images/production5.webp'
 
 import Image from 'next/image'
 import styles from './Production.module.scss'
 
 const Production = () => {
 	return (
-		<section className={styles.Production}>
+		<section id="production" className={styles.Production}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.titleWrapper}>
 					<div className={styles.titleInner}>

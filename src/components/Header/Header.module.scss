@@ -7,6 +7,13 @@
 	left: 0;
 	width: 100%;
 	z-index: 100;
+	background: transparent;
+	transition: all 0.3s ease;
+
+	&.scrolled {
+		padding: 15px 0;
+		background-color: $gray;
+	}
 	.nav {
 		gap: 20px;
 		display: flex;

@@ -1,7 +1,7 @@
 import styles from './Hero.module.scss'
 const Hero = () => {
 	return (
-		<section className={styles.Hero}>
+		<section id="hero" className={styles.Hero}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.heroContent}>
 					<h1 className={styles.title}>
