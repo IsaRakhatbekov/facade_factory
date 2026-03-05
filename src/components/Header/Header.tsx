@@ -231,7 +231,7 @@ const Header = () => {
 								</button>
 								<button
 									className={`${styles.burgerBtn} ${styles.burgerBtnTransparent}`}
-									onClick={closeMenu}
+									onClick={handleCalcClick}
 								>
 									Получить консультацию
 								</button>

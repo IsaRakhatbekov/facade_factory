@@ -1,4 +1,7 @@
+'use client'
 import styles from './Hero.module.scss'
+import { scrollToForm } from '@/utils/scroll'
+
 const Hero = () => {
 	return (
 		<section id="hero" className={styles.Hero}>
@@ -15,10 +18,18 @@ const Hero = () => {
 						<span>Точно</span> <span>Красиво</span> <span>В срок</span>
 					</h2>
 					<div className={styles.btnWrapper}>
-						<button className={`${styles.btn} ${styles.btnPrimary}`}>
+						<button
+							type="button"
+							className={`${styles.btn} ${styles.btnPrimary}`}
+							onClick={scrollToForm}
+						>
 							Рассчитать стоимость
 						</button>
-						<button className={`${styles.btn} ${styles.btnTransparent}`}>
+						<button
+							type="button"
+							className={`${styles.btn} ${styles.btnTransparent}`}
+							onClick={scrollToForm}
+						>
 							Получить консультацию
 						</button>
 					</div>

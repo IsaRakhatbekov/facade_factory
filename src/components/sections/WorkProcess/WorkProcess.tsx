@@ -1,4 +1,6 @@
+'use client'
 import styles from './WorkProcess.module.scss'
+import { scrollToForm } from '@/utils/scroll'
 
 const WorkProcess = () => {
 	return (
@@ -152,7 +154,9 @@ const WorkProcess = () => {
 					</li>
 				</ul>
 
-				<button className={styles.btn}>Рассчитать стоимость</button>
+				<button type="button" className={styles.btn} onClick={scrollToForm}>
+					Рассчитать стоимость
+				</button>
 			</div>
 		</section>
 	)

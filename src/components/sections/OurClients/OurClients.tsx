@@ -1,4 +1,6 @@
+'use client'
 import styles from './OurClients.module.scss'
+import { scrollToForm } from '@/utils/scroll'
 
 const OurClients = () => {
 	return (
@@ -34,7 +36,14 @@ const OurClients = () => {
 						</p>
 					</li>
 					<li className={`${styles.item} ${styles.itemBtn}`}>
-						<a className={styles.itemBtnLink} href='#'>
+						<a
+							className={styles.itemBtnLink}
+							href="#form"
+							onClick={(e) => {
+								e.preventDefault()
+								scrollToForm()
+							}}
+						>
 							Оставить заявку
 						</a>
 					</li>

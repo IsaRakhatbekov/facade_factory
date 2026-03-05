@@ -1,4 +1,6 @@
+'use client'
 import styles from './ReadyProjects.module.scss'
+import { scrollToForm } from '@/utils/scroll'
 
 const ReadyProjects = () => {
 	return (
@@ -13,7 +15,9 @@ const ReadyProjects = () => {
 					</li>
 					<li className={styles.item}>
 						<p className={styles.text}>Проект по чертежам дизайнера</p>
-						<button>Запросить образцы</button>
+						<button type="button" onClick={scrollToForm}>
+							Запросить образцы
+						</button>
 					</li>
 					<li className={styles.item}>
 						<p className={styles.text}>Индивидуальный профиль</p>
