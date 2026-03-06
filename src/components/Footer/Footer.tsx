@@ -1,18 +1,31 @@
+'use client'
 import logo from '@/public/images/logo.svg'
 import Image from 'next/image'
 import styles from './Footer.module.scss'
 
 const Footer = () => {
+	const scrollToHero = () => {
+		const hero = document.getElementById('hero')
+		if (hero) {
+			hero.scrollIntoView({ behavior: 'smooth', block: 'start' })
+		}
+	}
+
 	return (
 		<footer className={styles.Footer}>
 			<div className={`${styles.container} container`}>
 				<nav className={styles.top}>
-					<div className={styles.logoWrapper}>
+					<button
+						type='button'
+						className={styles.logoWrapper}
+						onClick={scrollToHero}
+						aria-label='На главную'
+					>
 						<div className={styles.logoInner}>
 							<Image src={logo} alt='ФАБРИКА ФАСАДОВ' />
 						</div>
 						<p className={styles.logoText}>Производство фасадов на ЧПУ</p>
-					</div>
+					</button>
 					<ul className={styles.list}>
 						<li className={styles.item}>
 							<a className={styles.link} href='#'>

@@ -81,9 +81,17 @@ const Header = () => {
 		>
 			<div className={`${styles.container} container`}>
 				<nav className={styles.nav}>
-					<div className={styles.logoWrapper}>
+					<button
+						type='button'
+						className={styles.logoWrapper}
+						onClick={() => {
+							scrollToSection('hero')
+							closeMenu()
+						}}
+						aria-label='На главную'
+					>
 						<Image src={logo} alt='ФАБРИКА ФАСАДОВ' />
-					</div>
+					</button>
 					<ul className={styles.list}>
 						<li className={styles.item}>
 							<a

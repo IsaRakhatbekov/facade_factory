@@ -12,6 +12,12 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-end;
+			border: none;
+			background: none;
+			padding: 0;
+			cursor: pointer;
+			font: inherit;
+			text-align: left;
 		}
 
 		.logoInner {
@@ -44,6 +50,24 @@
 			font-weight: 400;
 			font-size: 14px;
 			color: $white;
+			position: relative;
+			display: inline-block;
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				bottom: -3px;
+				width: 0;
+				height: 1px;
+				background: $white;
+				transform: translateX(-50%);
+				transition: width 0.3s ease;
+			}
+
+			&:hover::after {
+				width: 100%;
+			}
 		}
 	}
 
