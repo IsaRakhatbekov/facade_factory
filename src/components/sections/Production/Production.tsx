@@ -9,7 +9,7 @@ import styles from './Production.module.scss'
 
 const Production = () => {
 	return (
-		<section id="production" className={styles.Production}>
+		<section id='production' className={styles.Production}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.titleWrapper}>
 					<div className={styles.titleInner}>

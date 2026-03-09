@@ -1,10 +1,10 @@
 'use client'
-import styles from './OurClients.module.scss'
 import { scrollToForm } from '@/utils/scroll'
+import styles from './OurClients.module.scss'
 
 const OurClients = () => {
 	return (
-		<section id="clients" className={styles.OurClients}>
+		<section id='clients' className={styles.OurClients}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.titleWrapper}>
 					<div className={styles.titleInner}>
@@ -38,8 +38,8 @@ const OurClients = () => {
 					<li className={`${styles.item} ${styles.itemBtn}`}>
 						<a
 							className={styles.itemBtnLink}
-							href="#form"
-							onClick={(e) => {
+							href='#form'
+							onClick={e => {
 								e.preventDefault()
 								scrollToForm()
 							}}

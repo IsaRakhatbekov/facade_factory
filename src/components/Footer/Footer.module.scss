@@ -11,13 +11,14 @@
 		.logoWrapper {
 			display: flex;
 			justify-content: space-between;
-			align-items: flex-end;
+			align-items: center;
 			border: none;
 			background: none;
 			padding: 0;
 			cursor: pointer;
 			font: inherit;
 			text-align: left;
+			gap: 5px;
 		}
 
 		.logoInner {
