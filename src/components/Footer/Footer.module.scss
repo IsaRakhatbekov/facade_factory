@@ -91,6 +91,12 @@
 				color: $white;
 			}
 
+			.socLinkWrapper {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+
 			.socLink {
 				width: 50px;
 				height: 50px;
@@ -99,6 +105,9 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				pointer-events: none;
+				cursor: not-allowed;
+				opacity: 0.5;
 			}
 		}
 
@@ -191,6 +200,14 @@
 		.copyright {
 			margin: 0 auto;
 			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.Footer {
+		.contactsWrapper {
+			flex-direction: column;
 		}
 	}
 }

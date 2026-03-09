@@ -1,10 +1,10 @@
 'use client'
-import styles from './WorkProcess.module.scss'
 import { scrollToForm } from '@/utils/scroll'
+import styles from './WorkProcess.module.scss'
 
 const WorkProcess = () => {
 	return (
-		<section id="work-process" className={styles.WorkProcess}>
+		<section id='work-process' className={styles.WorkProcess}>
 			<div className={`${styles.container} container`}>
 				<div className={styles.upTitle}>просто и прозрачно</div>
 				<div className={styles.titleWrapper}>
@@ -13,7 +13,7 @@ const WorkProcess = () => {
 						<div className={styles.titleLine}></div>
 					</div>
 					<h3 className={styles.subtitle}>
-						Поняткий процесс — предсказуемый результат
+						Понятный процесс — предсказуемый результат
 					</h3>
 				</div>
 
@@ -154,7 +154,7 @@ const WorkProcess = () => {
 					</li>
 				</ul>
 
-				<button type="button" className={styles.btn} onClick={scrollToForm}>
+				<button type='button' className={styles.btn} onClick={scrollToForm}>
 					Рассчитать стоимость
 				</button>
 			</div>
