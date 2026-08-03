@@ -20,7 +20,10 @@ const SpecialConditions = () => {
 
 				<div className={styles.wrapper}>
 					<div className={styles.imgWrapper}>
-						<Image src={specialConditionsImg} alt='Special conditions' />
+						<Image
+							src={specialConditionsImg}
+							alt='Специальные условия на изготовление мебельных фасадов'
+						/>
 					</div>
 					<ul className={styles.content}>
 						<li className={styles.item}>

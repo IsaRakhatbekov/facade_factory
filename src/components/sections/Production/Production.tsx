@@ -23,14 +23,20 @@ const Production = () => {
 				<ul className={styles.list}>
 					<li className={styles.item}>
 						<div className={styles.itemImg}>
-							<Image src={production1} alt='' />
+							<Image
+								src={production1}
+								alt='Фасады МДФ с матовой эмалью для кухни на заказ'
+							/>
 						</div>
 						<h4 className={styles.itemTitle}>Фасады МДФ</h4>
 						<p className={styles.itemText}>МДФ, эмаль матовая</p>
 					</li>
 					<li className={styles.item}>
 						<div className={styles.itemImg}>
-							<Image src={production2} alt='' />
+							<Image
+								src={production2}
+								alt='Фрезерованные фасады МДФ любой сложности'
+							/>
 						</div>
 						<h4 className={styles.itemTitle}>
 							Фрезерованные фасады любой сложности
@@ -39,21 +45,30 @@ const Production = () => {
 					</li>
 					<li className={styles.item}>
 						<div className={styles.itemImg}>
-							<Image src={production3} alt='' />
+							<Image
+								src={production3}
+								alt='Гладкие и классические фасады из МДФ'
+							/>
 						</div>
 						<h4 className={styles.itemTitle}>Гладкие и классические фасады</h4>
 						<p className={styles.itemText}>МДФ, эмаль матовая</p>
 					</li>
 					<li className={styles.item}>
 						<div className={styles.itemImg}>
-							<Image src={production4} alt='' />
+							<Image
+								src={production4}
+								alt='Крашеные фасады для кухни: мат, шелк, глянец'
+							/>
 						</div>
 						<h4 className={styles.itemTitle}>Крашеные фасады </h4>
 						<p className={styles.itemText}>Mат, шелк, глянец</p>
 					</li>
 					<li className={styles.item}>
 						<div className={styles.itemImg}>
-							<Image src={production5} alt='' />
+							<Image
+								src={production5}
+								alt='Мебельные фасады нестандартных размеров и форм на заказ'
+							/>
 						</div>
 						<h4 className={styles.itemTitle}>Нестандартные размеры и формы</h4>
 						<p className={styles.itemText}>МДФ, эмаль матовая</p>

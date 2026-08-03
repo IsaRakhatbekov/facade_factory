@@ -41,7 +41,10 @@ const WhyWe = () => {
 							</p>
 						</li>
 						<li className={`${styles.item} ${styles.itemImg}`}>
-							<Image src={whyWe1} alt='whyWe1' />
+							<Image
+								src={whyWe1}
+								alt='Производство мебельных фасадов в Бишкеке'
+							/>
 						</li>
 					</ul>
 				</div>

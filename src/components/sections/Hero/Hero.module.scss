@@ -1,8 +1,8 @@
 @use '../../../styles/global.scss' as *;
 
 .Hero {
-	background: url('../../../../public/images/heroBg.webp') no-repeat center
-		center / cover;
+	// Путь из /public, а не бандл — чтобы preload в layout.tsx попадал в тот же URL.
+	background: url('/images/heroBg.webp') no-repeat center center / cover;
 	background-attachment: fixed;
 	width: 100%;
 	height: 100vh;
